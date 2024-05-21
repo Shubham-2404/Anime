@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.head {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.input {
+    position: relative;
+    width: 25%;
+}
+
+.input>input {
+    width: calc(100% - 3.9rem);
+    /* Adjusted width to accommodate button */
+    height: 2rem;
+    border-radius: 15px 0 0 15px;
+    /* Adjusted border radius */
+    border-right: none;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    padding: 0.5rem;
+
+}
+
+.input>button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 15px 15px 15px 15px;
+    /* Adjusted border radius */
+    z-index: 2;
+    /* Ensures the button appears above the input */
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.char {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.char>img {
+    width: 300px;
+    height: 210px;
+    cursor: pointer;
+}
+
+.char>img:hover {
+    box-shadow: 15px 15px 15px gray;
+}
+
+.char>div {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh ;
+    background: gray;
+}
+
+.head {
+    background: yellow;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.im1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    height: 60vh;
+    gap: 100px;
+    background: orangered;
+    margin-top: 15vh;
+
+}
+
+.im1>img{
+    height: 300px;
+    width: 400px;
+}
+
+ul>li{
+    font-weight: bold;
+    padding: 10px 0;
+    color: #fff;
+    font-size: large;
+}
+
+.btn2{
+    margin-top: 50px;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    background: rgb(75, 156, 188);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn2:active{
+    background: orangered;
+}
+
